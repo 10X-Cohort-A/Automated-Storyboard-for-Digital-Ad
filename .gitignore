@@ -1,2 +1,6 @@
+
 .env
 /Eda_analysis/concepts.json
+=======
+Data/*
+.env
