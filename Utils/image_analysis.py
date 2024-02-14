@@ -1,9 +1,12 @@
 
-
 import cv2
 from typing import Tuple, List
 import matplotlib.pyplot as plt
 
+import cv2
+import pytesseract
+from langdetect import detect
+from colormap import rgb2hex
 
 
 def locate_image_on_image(locate_image: str, on_image: str, prefix: str = '', visualize: bool = False, color: Tuple[int, int, int] = (0, 0, 255)):
@@ -35,10 +38,6 @@ def locate_image_on_image(locate_image: str, on_image: str, prefix: str = '', vi
         print(err)
 
 
-import cv2
-import pytesseract
-from langdetect import detect
-from colormap import rgb2hex
 
 def extract_text_on_image(image_location: str) -> List[str]:
     """
