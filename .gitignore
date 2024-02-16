@@ -4,3 +4,5 @@
 =======
 Data/*
 .env
+/Notebook/Data_preparation/organized_data
+/Notebook/Data_preparation/concepts.json
